@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="點選歌曲即可播放"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imgFront"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtMusic"
+        android:src="@drawable/front" />
+
+    <ImageView
+        android:id="@+id/imgPlay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/imgFront"
+        android:layout_toRightOf="@+id/imgFront"
+        android:src="@drawable/play" />
+
+    <ImageView
+        android:id="@+id/imgPause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/imgFront"
+        android:layout_toRightOf="@+id/imgPlay"
+        android:src="@drawable/pause" />
+
+    <ImageView
+        android:id="@+id/imgNext"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/imgFront"
+        android:layout_toRightOf="@+id/imgPause"
+        android:src="@drawable/next" />
+
+    <ImageView
+        android:id="@+id/imgEnd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/imgFront"
+        android:layout_toRightOf="@+id/imgNext"
+        android:src="@drawable/end" />
+
+    <TextView
+        android:id="@+id/txtSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imgEnd"
+        android:text="歌曲清單："
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/lstMusic"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtSong" />
+
+</RelativeLayout>
